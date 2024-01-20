@@ -127,6 +127,12 @@ nav ul li a:hover::after {
   color: #c1003d;
 }
 
+.program {
+  color: #ababab !important;
+  font-style: italic;
+  margin-left: 2rem;
+}
+
 .tab-contents {
   display: none;
 }
