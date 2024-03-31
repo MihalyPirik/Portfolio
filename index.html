@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Pirik Mihály | Portfólió</title>
+  <title id="title">Pirik Mihály | Portfólió</title>
 
   <meta name="description" content="">
   <meta name="keywords" content="Pirik Mihály">
@@ -17,10 +17,12 @@
   <div class="container">
     <nav>
       <ul id="sidemenu">
-        <li><a href="#about">Rólam</a></li>
-        <li><a href="#portfolio">Portfólió</a></li>
-        <li><a href="#contact">Kapcsolat</a></li>
-        <li><a href="indexE.html"><img class="img" src="images/united-kingdom.png" width="34px" height="29"></a></li>
+        <li><a id="about-menu" href="#about">Rólam</a></li>
+        <li><a id="portfolio-menu" href="#portfolio">Portfólió</a></li>
+        <li><a id="contact-menu" href="#contact">Kapcsolat</a></li>
+        <li id="changeLanguage"><img id="image-menu" class="img" src="images/united-kingdom.png" width="34px"
+            height="29">
+        </li>
         <i class="fa fa-close" onclick="closemenu()"></i>
       </ul>
       <i class="fa fa-reorder" onclick="openmenu()"></i>
@@ -30,32 +32,31 @@
     <div class="container">
       <div class="row">
         <div class="about-col-1">
-          <img class="pm-image" src="images/pm.JPG">
+          <img id="pm-image" src="images/pm.JPG">
         </div>
         <div class="about-col-2">
-          <h1 class="sub-title">Rólam</h1>
-          <p class="description">Pirik Mihály vagyok. Komáromban élek. A Győri SZC Jedlik Ányos Gépipari és Informatikai
+          <h1 id="about-me" class="sub-title">Rólam</h1>
+          <p id="description" class="description">Pirik Mihály vagyok. Komáromban élek. A Győri SZC Jedlik Ányos
+            Gépipari és Informatikai
             Technikum és Kollégium tanulója vagyok.</p>
 
           <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('skills')">Technológiák</p>
-            <p class="tab-links" onclick="opentab('experience')">Tapasztalat</p>
-            <p class="tab-links" onclick="opentab('education')">Tanulmányok</p>
+            <p id="skills-tab" class="tab-links active-link" onclick="opentab('skills')">Technológiák</p>
+            <p id="experience-tab" class="tab-links" onclick="opentab('experience')">Tapasztalat</p>
+            <p id="education-tab" class="tab-links" onclick="opentab('education')">Tanulmányok</p>
           </div>
           <div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
-                <li><span>HTML5/CSS3</span></li>
+                <li><span>HTML5/CSS3/JavaScript</span></li>
                 <li><span>Bootstrap5</span></li>
-                <li><span>JavaScript</span></li>
                 <li><span>Vue.js</span></li>
                 <li><span>Angular</span></li>
-                <li><span>Node.js</span></li>
+                <li><span>Node.js/Express.js</span></li>
                 <li><span>PHP/Laravel</span></li>
                 <li><span>C#/.NET/WPF</span></li>
                 <li><span>MySQL</span></li>
                 <li><span>GIT</span></li>
-                <li><span>Figma</span></li>
               </ul>
             </div>
             <div class="tab-contents" id="experience">
@@ -66,12 +67,14 @@
             </div>
             <div class="tab-contents" id="education">
               <ul>
+                <li><span>2024</span><br>Danubius Expert Zrt., Budapest<br><span id="software-developer-course" class="program">Szoftverfejlesztő kurzus</span></li>
                 <li><span>2023 - </span><br>Győri SZC Jedlik Ányos Gépipari és Informatikai Technikum és
-                  Kollégium, Győr<br><span class="program">Webfejlesztő</span></li>
+                  Kollégium, Győr<br><span id="web-developer" class="program">Webfejlesztő</span></li>
                 <li><span>2022 - </span><br>Győri SZC Jedlik Ányos Gépipari és Informatikai Technikum és
-                  Kollégium, Győr<br><span class="program">Szoftverfejlesztő- és tesztelő technikus</span></li>
+                  Kollégium, Győr<br><span id="software-developer-and-testing-technician"
+                    class="program">Szoftverfejlesztő- és tesztelő technikus</span></li>
                 <li><span>2016 - 2020</span><br>Tatabányai SZC Kultsár István Technikum és Szakgimnázium,
-                  Komárom<br><span class="program">Érettségi</span></li>
+                  Komárom<br><span id="graduation" class="program">Érettségi</span></li>
               </ul>
             </div>
           </div>
@@ -82,13 +85,13 @@
 
   <div id="portfolio">
     <div class="container">
-      <h1 class="sub-title">Munkáim</h1>
+      <h1 id="my-works" class="sub-title">Munkáim</h1>
       <div class="work-list">
         <div class="work">
           <img src="images/koltsegfigyelo.png">
           <div class="layer">
-            <h3>Költségfigyelő</h3>
-            <p>Ezzel a Windows forms programmal rendszerezhetjük a kiadásainkat kategóriákra bontva.
+            <h3 id="app-one-title">Költségfigyelő</h3>
+            <p id="app-one-body">Ezzel a Windows forms programmal rendszerezhetjük a kiadásainkat kategóriákra bontva.
               Az elmentett adatokat egy adatbázisban tárolja, melyeket később le lehet menteni egy csv fájlba.</p>
             <a href="https://github.com/MihalyPirik/Koltsegfigyelo"><i class="fa fa-external-link"
                 style="font-size:30px"></i></a>
@@ -97,8 +100,9 @@
         <div class="work">
           <img src="images/jegyzettomb.png">
           <div class="layer">
-            <h3>Jegyzettömb</h3>
-            <p>Ezzel a Windows forms programmal jegyzeteket készíthetünk. Az elmentett adatokat egy adatbázisban
+            <h3 id="app-two-title">Jegyzettömb</h3>
+            <p id="app-two-body">Ezzel a Windows forms programmal jegyzeteket készíthetünk. Az elmentett adatokat egy
+              adatbázisban
               tárolja.</p>
             <a href="https://github.com/MihalyPirik/Jegyzettomb"><i class="fa fa-external-link"
                 style="font-size:30px"></i></a>
@@ -107,15 +111,16 @@
         <div class="work">
           <img src="images/tic-tac-toe.png">
           <div class="layer">
-            <h3>Tic-Tac-Toe</h3>
-            <p>Egy 3×3 mezőből álló táblára felváltva teszik le a játékosok a jeleiket, bármelyik még szabad mezőre.
+            <h3 id="app-three-title">Tic-Tac-Toe</h3>
+            <p id="app-three-body">Egy 3×3 mezőből álló táblára felváltva teszik le a játékosok a jeleiket, bármelyik
+              még szabad mezőre.
               Az nyer, akinek sikerül egy vonalban 3 jelet elhelyeznie, vízszintes, függőleges vagy átlós irányban.</p>
             <a href="https://github.com/MihalyPirik/Tic-Tac-Toe"><i class="fa fa-external-link"
                 style="font-size:30px"></i></a>
           </div>
         </div>
       </div>
-      <a href="https://github.com/MihalyPirik" class="btn">Tovább</a>
+      <a id="see-more" href="https://github.com/MihalyPirik" class="btn">Tovább</a>
     </div>
   </div>
 
@@ -123,10 +128,10 @@
     <div class="container">
       <div id="row">
         <div class="contact">
-          <h1 class="sub-title">Kapcsolat</h1>
+          <h1 id="contact-me" class="sub-title">Kapcsolat</h1>
           <p><i class="fa fa-send-o" style="font-size:20px"></i>misipirik@gmail.com</p>
           <p><i class="fa fa-phone" style="font-size:20px"></i>+36 20 243 9175</p>
-          <a href="images/CV_Pirik_Mihaly.pdf" download class="btn btn2">Önéletrajz <i class="fa fa-download"
+          <a id="CV" href="images/CV_Pirik_Mihaly.pdf" download class="btn btn2">Önéletrajz <i class="fa fa-download"
               style="font-size:20px"></i></a>
         </div>
       </div>
@@ -158,6 +163,7 @@
       sidemenu.style.right = "-200px";
     }
   </script>
+  <script src="./script.js"></script>
 
 </body>
 

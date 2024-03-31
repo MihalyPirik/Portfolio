@@ -55,6 +55,12 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
+#pm-image {
+  padding: 70px;
+  border-radius: 20%;
+  filter: brightness(105%) contrast(105%);
+}
+
 .img {
   vertical-align: middle;
 }
@@ -269,8 +275,8 @@ nav .fa {
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1100px) {
-  .pm-image {
-    padding: 50px;
+  #pm-image {
+    padding: 100px;
   }
 
   nav {
@@ -348,8 +354,8 @@ nav .fa {
 }
 
 @media only screen and (max-width: 600px) {
-  .pm-image {
-    padding: 30px;
+  #pm-image {
+    padding: 40px;
   }
 
   nav .fa {
